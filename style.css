@@ -5,7 +5,7 @@
   
 /*header content*/
 .main {
-    background-image: url("/images/bgimagenet.jpg");
+    background-image: url("images/bgimagenet.jpg");
     height: 90vh;
     opacity: 10;
     position: relative;
@@ -218,23 +218,23 @@
 }
 
 .anim1 {
-    background-image: url("/images/prg1.webp");
+    background-image: url("images/prg1.webp");
 }
 
 .anim2 {
-    background-image: url("/images/prg2.webp");
+    background-image: url("images/prg2.webp");
 }
 
 .anim3 {
-    background-image: url("/images/prg3.webp");
+    background-image: url("images/prg3.webp");
 }
 
 .anim4 {
-    background-image: url("/images/prg4.webp");
+    background-image: url("images/prg4.webp");
 }
 
 .anim5 {
-    background-image: url("/images/prg5.webp");
+    background-image: url("images/prg5.webp");
 }
 
 .no {
