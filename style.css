@@ -1,0 +1,558 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+  
+/*header content*/
+.main {
+    background-image: url("/images/bgimagenet.jpg");
+    height: 90vh;
+    opacity: 10;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 5;
+}
+
+.mainoverlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.mainnavbar {
+    height: 11%;
+    width: 80vw;
+    position: absolute;
+    top: 0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+}
+
+.mainlogo {
+    width: 40%;
+    height: 1em;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.mainsignin {
+    width: 60%;
+    height: 1em;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#button1 {
+    background-color: red;
+    color: white;
+    font-size: 14px;
+    font-weight: 530;
+    height: 33px;
+    width: 74px;
+    padding: 6px 9px 6px 9px;
+    border: none;
+    border-end-end-radius: 5px;
+    border-start-start-radius: 5px;
+    border-start-end-radius: 5px;
+    border-end-start-radius: 5px;
+    margin-right: 2%;
+}
+
+#select1 {
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+    height: 31px;
+    width: auto;
+    font-weight: 650;
+    margin-right: 2%;
+    border-radius: 4%;
+    padding: 6px 20px 6px 20px;
+    border: 1px solid white;
+    border-end-end-radius: 4px;
+    border-start-start-radius: 4px;
+    border-start-end-radius: 4px;
+    border-end-start-radius: 4px;
+    text-align: left;
+    text-decoration: white;
+    font-size: 15px;
+}
+
+
+.mainmiddle {
+    height: 60%;
+    width: 45%;
+
+    font-size: 23px;
+    color: white;
+    z-index: 100;
+
+}
+
+.mainmidtitle {
+    height: 70%;
+    color: rgba(255, 255, 255, 1);
+    font-weight: 900;
+    font-family: sans-serif;
+    background-color: none;
+    display: block;
+    padding: 40px 65px 40px 65px;
+}
+.mainmidtitle h1 {
+    font-size: 60px;
+    text-size-adjust: 100%;
+    text-align: center;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+.mainmidtitle #p1 {
+    text-align: center;
+    text-size-adjust: 100%;
+    padding-top: 2.6%;
+    font-family: sans-serif;
+    font-weight: 450;
+    font-size: 21px;
+}
+.mainmidtitle #p2 {
+    text-align: center;
+    text-size-adjust: 100%;
+    padding-top: 4%;
+    font-family: sans-serif;
+    font-weight: 400;
+    font-size: 17px;
+}
+
+.email {
+    padding-top: 2%;
+}
+.email input {
+    width: 60%;
+    height: 55px;
+    color: white;
+    background: none;
+    line-height: 24px;
+    font-family: sans-serif;
+    font-size: 16.5px;
+    font-weight: 380;
+    padding-left: 3%;
+    border: 1px solid rgb(200, 200, 200);
+    border-end-end-radius: 5px;
+    border-start-start-radius: 5px;
+    border-start-end-radius: 5px;
+    border-end-start-radius: 5px;
+}
+.email input::placeholder{
+    position: absolute;
+    top: 18px;
+    left: 10px;
+    color: rgb(220,220,220);
+    transition: 0.3s;
+    pointer-events: none;
+}
+
+.email input:focus::placeholder{
+    font-size: 12px;
+    transform: translateY(-15px);
+}
+
+.email button {
+    width: 34%;
+    height: 60px;
+    background-color: red;
+    border: none;
+    border-end-end-radius: 6.5px;
+    border-start-start-radius: 6.5px;
+    border-start-end-radius: 6.5px;
+    border-end-start-radius: 6.5px;
+    color: white;
+    font-size: 25px;
+    font-weight: 500;
+}
+
+/*main content*/
+.maincontent {
+    height: auto;
+    background-color: black;
+    border-top: 5px solid rgb(180, 39, 39);
+}
+
+.mainheading {
+    background: radial-gradient(50% 500% at 50% -420%, rgba(64, 97, 231, 0.4) 80%, rgba(0, 0, 0, 0.1) 100%), black;
+    height: 50px;
+    width: 90vw;
+    font-family: unset;
+    font-size: 16px;
+    font-weight: 400;
+    padding-top: 4rem;
+    color: white;
+    padding-left: 09%;
+}
+
+.mainimg {
+    height: 350px;
+    width: 90vw;
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: 6%;
+}
+
+.anim {
+    height: 275px;
+    width: 200px;
+    border-end-end-radius: 10px;
+    border-start-start-radius: 10px;
+    border-start-end-radius: 10px;
+    border-end-start-radius: 10px;
+    margin: 5px 10px 5px 10px;
+    background-size: cover;
+    transition: all 40ms ease-out 0s;
+}
+
+.anim1 {
+    background-image: url("/images/prg1.webp");
+}
+
+.anim2 {
+    background-image: url("/images/prg2.webp");
+}
+
+.anim3 {
+    background-image: url("/images/prg3.webp");
+}
+
+.anim4 {
+    background-image: url("/images/prg4.webp");
+}
+
+.anim5 {
+    background-image: url("/images/prg5.webp");
+}
+
+.no {
+    font-size: 98px;
+    font-weight: 800;
+    font-family: sans-serif;
+    color: white;
+    border: none;
+    height: 80px;
+    width: 20px;
+    position: absolute;
+    align-items: center;
+    margin-top: 145px;
+    z-index: 5;
+}
+
+.no1 {
+    font-size: 95px;
+    font-weight: 790;
+    font-family: sans-serif;
+    color: black;
+    border: none;
+    height: 80px;
+    width: 50px;
+    position: absolute;
+    align-items: center;
+    margin-top: 162px;
+    z-index: 5;
+}
+
+.one {
+    position: absolute;
+    left: 7.8%;
+
+}
+.one1 {
+    position: absolute;
+    left: 8.3%;
+}
+
+.two {
+    position: absolute;
+    left: 26%;
+}
+.two2 {
+    position: absolute;
+    left: 26.5%;
+}
+
+.three {
+    position: absolute;
+    left: 43%;
+}
+.three3{
+    position: absolute;
+    left: 43.5%;
+}
+
+.four {
+    position: absolute;
+    left: 60%;
+}
+.four4 {
+    position: absolute;
+    left: 60.5%;
+}
+
+.five {
+    position: absolute;
+    left: 78%;
+}
+.five5 {
+    position: absolute;
+    left: 78.5%;
+}
+
+.anim:hover {
+    height: 285px;
+    width:210px;
+    border-end-end-radius: 11px;
+    border-start-start-radius: 11px;
+    border-start-end-radius: 11px;
+    border-end-start-radius: 11px;
+    background-size: cover;
+}
+
+.mainheading2{
+    height: 40px;
+    width: 100%;
+    font-family: unset;
+    font-size: 16px;
+    font-weight: 400;
+    padding-top: 0.5rem;
+    color: white;
+    padding-left: 09%;
+}
+
+.mainfour{
+    height: 350px;
+    width: 86vw;
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: 7%;
+}
+
+.cont{
+    height: 275px;
+    width: 290px;
+    z-index: 1000;
+    color: white;
+    border-end-end-radius: 12px;
+    border-start-start-radius: 12px;
+    border-start-end-radius: 12px;
+    border-end-start-radius: 12px;
+    background: linear-gradient(to bottom, #15002a, #24033d);
+}
+.cont h2{
+    font-size: 25px;
+    font-family: sans-serif;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 10%;
+    font-weight: 400;
+}
+.cont p{
+    font-size: 17px;
+    font-family: sans-serif;
+    color: #ffffffcc;
+    opacity: 0.7;
+    margin-left: 5%;
+    margin-right: 2%;
+    margin-top: 7%;
+    font-weight: 100;
+}
+
+.imglogos{
+    height: 80px;
+    width: 100%;
+    margin-top: 15%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#img1{
+    height: 50px; 
+    width: 60px;
+    padding-right: 25px;
+}
+#img2{
+    height: 60px; 
+    width: 60px;
+    padding-right: 25px;
+    padding-bottom: 10px;
+}
+#img3{
+    height: 50px; 
+    width: 60px;
+    padding-right: 25px;
+}
+#img4{
+    height: 55px; 
+    width: 65px;
+    padding-right: 25px;
+    padding-bottom: 25px;
+}
+
+/*footer content*/
+.footercont{
+    height: auto;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.emaillast{
+    height: 150px;
+    width: 60vw;
+    color: white;
+}
+.emaillast p{
+    text-align: center;
+    text-size-adjust: 100%;
+    padding-bottom: 2%;
+    font-family: sans-serif;
+    font-weight: 400;
+    font-size: 17px;
+    z-index: 5000;
+}
+
+.emaillast2{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.emaillast2 input {
+    width: 60%;
+    height: 55px;
+    color: white;
+    background: none;
+    line-height: 28px;
+    font-family: sans-serif;
+    font-size: 17.5px;
+    font-weight: 380;
+    padding-left: 3%;
+    margin-right: 1%;
+    border: 1px solid rgb(200, 200, 200);
+    border-end-end-radius: 5px;
+    border-start-start-radius: 5px;
+    border-start-end-radius: 5px;
+    border-end-start-radius: 5px;
+}
+.emaillast2 input::placeholder{
+    font-size: 17.5px;
+    font-weight: 380;
+    position: absolute;
+    top: 30%;
+    color: rgb(220,220,220);
+    transition: 0.3s;
+    pointer-events: none;
+}
+
+.emaillast2 input:focus::placeholder{
+    font-size: 12px;
+    transform: translateY(-15px);
+}
+
+
+.emaillast2 button {
+    width: 22%;
+    height: 60px;
+    background-color: red;
+    border: none;
+    padding-top: 0.5%;
+    border-end-end-radius: 6.5px;
+    border-start-start-radius: 6.5px;
+    border-start-end-radius: 6.5px;
+    border-end-start-radius: 6.5px;
+    color: white;
+    font-size: 25px;
+    font-weight: 500;
+}
+
+
+.lastno{
+    height: 75px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    color: rgb(200,200,200);
+    width: 90vw;
+    padding-left: 9%;
+    font-size: 18px;
+    font-family: sans-serif;
+}
+
+.lastref{
+    height: 150px;
+    width: 90vw;
+    display: flex;
+    justify-content: space-between;
+    color: rgb(200, 200, 200);
+    padding-left: 10%;
+    padding-right: 20%;
+    line-height: 30px;
+    font-size: 16px;
+}
+.lastref ul{
+    display: flex;
+    flex-direction: column;
+}
+.lastref a{
+    font-family: sans-serif;
+    color: rgb(200, 200, 200);
+}
+
+.lastlang{
+    height: 40px;
+    width: 90vw;
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 10%;
+}
+
+#select2 {
+    background-color: rgba(0, 0, 0, 0);
+    color: rgb(200,200,200);
+    height: 31px;
+    width: auto;
+    font-weight: 650;
+    margin-right: 2%;
+    border-radius: 4%;
+    padding: 6px 20px 6px 20px;
+    border: 1px solid rgb(200,200,200);
+    border-end-end-radius: 4px;
+    border-start-start-radius: 4px;
+    border-start-end-radius: 4px;
+    border-end-start-radius: 4px;
+    text-align: left;
+    text-decoration: white;
+    font-size: 15px;
+}
+
+.lastnetflix{
+    height: 100px;
+    width: 90vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    color: rgb(200, 200, 200);
+    font-family: sans-serif;
+    padding-left: 10%;
+}
+
+.lastnetflix p{
+    color: rgb(180,180,180);
+    font-size: 15px;
+}
